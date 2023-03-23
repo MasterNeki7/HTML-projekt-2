@@ -1,0 +1,33 @@
+header {
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+}
+.title {
+    padding: 10px;
+    margin: auto;
+}
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body  {
+    display: grid;
+    grid-template-rows: auto;
+}
+article {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+img {
+    padding: 10px;
+    margin: auto;
+    /* height: 50%; */
+}
+.end-text {
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+}
