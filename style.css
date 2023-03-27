@@ -1,10 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-
 :root {
     --background-color: rgba(255, 255, 255, 0.7);
     --primary-color: rgba(255, 255, 255, 0.3);
@@ -32,7 +25,7 @@ article {
     margin: auto;
     text-align: center;
     background-color: var(--primary-color);
-    border-radius: 10px;
+    border-radius: 100px;
     border: 2px solid var(--border-color);
 
 }
@@ -40,7 +33,7 @@ article {
 img {
     padding: 10px;
     margin: auto;
-    border-radius: 100px;
+    border-radius: 100%;
     /* height: 50%; */
 }
 
@@ -49,6 +42,15 @@ h1 {
 }
 
 a {}
+
+footer {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    border: 2px solid var(--border-color);
+}
 
 .title {
     padding: 10px;
@@ -64,7 +66,12 @@ a {}
 }
 
 .end-text {
+    padding: 10px;
+    margin: auto;
     text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    border: 2px solid var(--border-color);
 }
 
 .wrapper {
