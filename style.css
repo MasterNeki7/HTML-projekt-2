@@ -39,7 +39,7 @@ img {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'Alfa Slab One', cursive;
     letter-spacing: 4px;
     -webkit-text-stroke: 0.1px white;
@@ -61,7 +61,7 @@ h3 {
 p {
     font-family: 'Alfa Slab One', cursive;
     letter-spacing: 2px;
-    -webkit-text-stroke: 0.1px white;
+    font-size: 20px;
 }
 
 footer {
