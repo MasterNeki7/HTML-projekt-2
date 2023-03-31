@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 :root {
     --background-color: rgba(255, 255, 255, 0.7);
     --primary-color: rgba(255, 255, 255, 0.3);
@@ -15,7 +17,7 @@ header {
 body {
     display: grid;
     grid-template-rows: auto;
-    background-image: url("./img/bkg.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.2)), url("./img/bkg.png");
     background-attachment: fixed;
     background-size: cover;
     margin: 5%;
@@ -23,7 +25,7 @@ body {
 
 article {
     padding: 10px;
-    margin: auto;
+    margin-bottom: 5%;
     text-align: center;
     background-color: var(--primary-color);
     border-radius: 100px;
@@ -37,11 +39,29 @@ img {
 }
 
 h1 {
-    font-size: 30px;
-    text-shadow: 1px 1px white;
+    font-size: 36px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 0.1px white;
 }
-h3, p {
-    text-shadow: 0.5px 0.5px white;
+
+h2 {
+    font-size: 30px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.1px white;
+}
+
+h3 {
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.1px white;
+}
+
+p {
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.1px white;
 }
 
 footer {
@@ -119,5 +139,5 @@ footer {
 }
 
 .title, .pages {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url("img/stone-block-bkg.png")
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)), url("img/stone-block-bkg.png")
 }
