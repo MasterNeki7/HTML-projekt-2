@@ -7,6 +7,7 @@
     <title>Getting started in Minecraft</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/oak-log.png" type="image/x-icon">
+    <script src="quiz.js" defer></script>
 </head>
 
 <div class="wrapper">
@@ -87,9 +88,53 @@
 </div>
 
 <div class="quiz">
-   <form action="">
-      
-   </form>
+
+   <h1>Knowledge Quiz!</h1>
+ 
+   <div class="q1">
+     <div class="quizQuestion">
+       <h2>How can Iron Ore be mined?</h2>
+     </div>
+ 
+     <div class="answers">
+       <label>
+         <input type="radio" name="questionOne" value="0"> Wooden Pickaxe
+       </label>
+       <label>
+         <input type="radio" name="questionOne" value="1"> Stone Pickaxe
+       </label>
+       <label>
+         <input type="radio" name="questionOne" value="0"> Iron Pickaxe
+       </label>
+       <label>
+         <input type="radio" name="questionOne" value="0"> Electric Drill
+       </label>
+     </div>
+   </div>
+
+   <div class="q2 hidden">
+      <div class="quizQuestion">
+        <h2>How is a Stone Pickaxe crafted?</h2>
+      </div>
+  
+      <div class="answers">
+        <label>
+          <input type="radio" name="questionOne" value="0"> 1 x Stick, 1 x Cobblestone
+        </label>
+        <label>
+          <input type="radio" name="questionOne" value="0"> 1 x Stick, 3 x Cobblestone
+        </label>
+        <label>
+          <input type="radio" name="questionOne" value="0"> 2 x Stick, 2 x Cobblestone
+        </label>
+        <label>
+          <input type="radio" name="questionOne" value="1"> 2 x Stick, 3 x Cobblestone
+        </label>
+      </div>
+    </div>
+ 
+    <button type="button" class="nextButton">Next Question</button>
+
 </div>
 
 </html>

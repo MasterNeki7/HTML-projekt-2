@@ -1,30 +1,25 @@
 //----------------------------------- Lets for quiz -----------------------------------
 let points = 0;
-
+let hiddenQuestion = 0;
+let q1 = document.querySelector(".q1");
+let q2 = document.querySelector(".q2");
 
 //----------------------------------- Lets for buttons --------------------------------
-let finishButton;
-let exitButton;
+let nextButton = document.querySelector(".nextButton");
+let finishButton = document.querySelector(".finishButton");
+
+//----------------------------------- Event Listeners ---------------------------------
+nextButton.addEventListener("click", nextQuestion);
+
 
 //------------------------------------- Functions -------------------------------------
-function badScore(points) {
-    if (points >= 3) {
-
-    }
+function nextQuestion() {
+    q1.classList.toggle("hidden");
+    q2.classList.toggle("hidden");
 }
 
-function goodScore(points) {
-    if (points >= 5 & points <= 3) {
-        
-    }
-}
+function finishQuiz () {
 
-function perfectScore(points) {
-    if (points === 10) {
-        
-    }
 }
-
-//------------------------------ Event listeners / Buttons ------------------------------
 
 
