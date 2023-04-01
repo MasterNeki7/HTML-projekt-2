@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
 :root {
     --background-color: rgba(255, 255, 255, 0.7);
     --primary-color: rgba(255, 255, 255, 0.3);
@@ -40,26 +39,26 @@ img {
 
 h1 {
     font-size: 40px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Minecraft', sans-serif;
     letter-spacing: 4px;
     -webkit-text-stroke: 0.1px white;
 }
 
 h2 {
     font-size: 30px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Minecraft', sans-serif;
     letter-spacing: 2px;
     -webkit-text-stroke: 0.1px white;
 }
 
 h3 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Minecraft', sans-serif;
     letter-spacing: 2px;
     -webkit-text-stroke: 0.1px white;
 }
 
 p {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Minecraft', sans-serif;
     letter-spacing: 2px;
     font-size: 20px;
 }
