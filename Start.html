@@ -91,7 +91,7 @@
 
    <h1>Knowledge Quiz!</h1>
  
-   <div class="q1">
+   <div class="q1" id="q1">
      <div class="quizQuestion">
        <h2>How can Iron Ore be mined?</h2>
      </div>
@@ -112,7 +112,7 @@
      </div>
    </div>
 
-   <div class="q2 hidden">
+   <div class="q2 hidden" id="q2">
       <div class="quizQuestion">
         <h2>How is a Stone Pickaxe crafted?</h2>
       </div>
@@ -133,7 +133,53 @@
       </div>
     </div>
  
-    <button type="button" class="nextButton">Next Question</button>
+
+    <div class="q3 hidden" id="q3">
+      <div class="quizQuestion">
+        <h2>Hamognus?</h2>
+      </div>
+  
+      <div class="answers">
+        <label>
+          <input type="radio" name="startQuestionThree" value="1"> 1
+        </label>
+        <label>
+          <input type="radio" name="startQuestionThree" value="0"> 2
+        </label>
+        <label>
+          <input type="radio" name="startQuestionThree" value="0"> 3
+        </label>
+        <label>
+          <input type="radio" name="startQuestionThree" value="0"> 4
+        </label>
+      </div>
+    </div>
+
+    <div class="q4 hidden" id="q4">
+      <div class="quizQuestion">
+        <h2>amogus</h2>
+      </div>
+  
+      <div class="answers">
+        <label>
+          <input type="radio" name="startQuestionFour" value="0"> 1
+        </label>
+        <label>
+          <input type="radio" name="startQuestionFour" value="0"> 2
+        </label>
+        <label>
+          <input type="radio" name="startQuestionFour" value="1"> 3
+        </label>
+        <label>
+          <input type="radio" name="startQuestionFour" value="0"> 4
+        </label>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button type="button" class="backButton">Previous Question</button>
+      <button type="button" class="nextButton">Next Question</button>
+    </div>
 
 </div>
 
