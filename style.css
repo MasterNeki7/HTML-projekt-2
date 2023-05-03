@@ -177,6 +177,7 @@ label {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     font-size: 20px;
+    
 }
 
 .title, .pages {
