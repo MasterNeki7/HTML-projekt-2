@@ -5,6 +5,14 @@ let hiddenQuestion = 0;
 let q1 = document.getElementById("q1");
 let q2 = document.getElementById("q2");
 let q3 = document.getElementById("q3");
+let q4 = document.getElementById("q4");
+let q5 = document.getElementById("q5");
+let q6 = document.getElementById("q6");
+let q7 = document.getElementById("q7");
+let q8 = document.getElementById("q8");
+let q9 = document.getElementById("q9");
+let q10 = document.getElementById("q10");
+
 let questionIndex = 0;
 //----------------------------------- Lets for buttons --------------------------------
 let backButton = document.querySelector(".backButton");
@@ -13,17 +21,31 @@ let finishButton = document.querySelector(".finishButton");
 
 //----------------------------------- Event Listeners ---------------------------------
 nextButton.addEventListener("click", nextQuestion);
+backButton.addEventListener("click", previousQuestion);
 
 //----------------------------------- Lists -------------------------------------------
 let questions = [];
 questions.push(q1);
 questions.push(q2);
 questions.push(q3);
+questions.push(q4);
+questions.push(q5);
+questions.push(q6);
+questions.push(q7);
+questions.push(q8);
+questions.push(q9);
+questions.push(q10);
 
 //------------------------------------- Functions -------------------------------------
 function nextQuestion() {
     questionIndex = (questionIndex + 1) % questions.length;
     questionShowed(questionIndex);
+}
+
+function previousQuestion() {
+    questionIndex = Math.max(questionIndex - 1, 0);
+    questionShowed(questionIndex);
+    console.log("lol");
 }
 
 
@@ -38,6 +60,5 @@ function questionShowed(index) {
         }
     }
 }
-
 
 
