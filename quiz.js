@@ -46,9 +46,10 @@ questions.push(q10);
 
 //------------------------------------- Functions -------------------------------------
 function nextQuestion() {
-    if(questionIndex < questions.length - 1) { 
+    if (questionIndex < questions.length - 1) {
         questionIndex = Math.max(questionIndex + 1) % questions.length;
     }
+
 
     questionShowed(questionIndex);
 }
@@ -66,7 +67,7 @@ function handleForm() {
         points += parseInt(answers[a].value, 10);
         console.log(points);
     }
-        alert(`you got ${points} points!`);
+    alert(`you got ${points} points!`);
 
     // questions.push(qEnd);
     // finalPoints.innerHTML = points;
