@@ -211,6 +211,10 @@ footer {
     margin: 5px;
 }
 
+.finishButton {
+    color: green;
+}
+
 .hidden {
     display: none;
 }

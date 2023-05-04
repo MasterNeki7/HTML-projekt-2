@@ -49,14 +49,35 @@ function nextQuestion() {
     if (questionIndex < questions.length - 1) {
         questionIndex = Math.max(questionIndex + 1) % questions.length;
     }
-    // HEJJ
+
+    if(questionIndex == questions.length - 1) {
+        nextButton.classList.toggle("hidden");
+        finishButton.classList.toggle("hidden");
+    }
+    
+    if(questionIndex == 1) {
+        backButton.classList.toggle("hidden");
+    }
+
+
 
     questionShowed(questionIndex);
 }
 
 function previousQuestion() {
+
+    if(questionIndex == questions.length - 1) {
+        nextButton.classList.toggle("hidden");
+        finishButton.classList.toggle("hidden");
+    }
+
+    if(questionIndex == 1) {
+        backButton.classList.toggle("hidden");
+    }
+
     questionIndex = Math.max(questionIndex - 1, 0);
     questionShowed(questionIndex);
+
 }
 
 function handleForm() {
