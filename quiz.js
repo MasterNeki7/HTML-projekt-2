@@ -13,7 +13,13 @@ let q8 = document.getElementById("q8");
 let q9 = document.getElementById("q9");
 let q10 = document.getElementById("q10");
 
+// let qEnd = document.getElementById("qEnd");
+
+
+// let finalPoints = document.querySelector("points");
+
 let questionIndex = 0;
+
 //----------------------------------- Lets for buttons --------------------------------
 let backButton = document.querySelector(".backButton");
 let nextButton = document.querySelector(".nextButton");
@@ -22,6 +28,8 @@ let finishButton = document.querySelector(".finishButton");
 //----------------------------------- Event Listeners ---------------------------------
 nextButton.addEventListener("click", nextQuestion);
 backButton.addEventListener("click", previousQuestion);
+finishButton.addEventListener("click", handleForm);
+
 
 //----------------------------------- Lists -------------------------------------------
 let questions = [];
@@ -38,17 +46,32 @@ questions.push(q10);
 
 //------------------------------------- Functions -------------------------------------
 function nextQuestion() {
-    questionIndex = (questionIndex + 1) % questions.length;
+    if(questionIndex < questions.length - 1) { 
+        questionIndex = Math.max(questionIndex + 1) % questions.length;
+    }
+
     questionShowed(questionIndex);
 }
 
 function previousQuestion() {
     questionIndex = Math.max(questionIndex - 1, 0);
     questionShowed(questionIndex);
-    console.log("lol");
 }
 
+function handleForm() {
+    let answers = document.querySelectorAll("input:checked");
+    let points = 0;
 
+    for (let a = 0; a < answers.length; a++) {
+        points += parseInt(answers[a].value, 10);
+        console.log(points);
+    }
+        alert(`you got ${points} points!`);
+
+    // questions.push(qEnd);
+    // finalPoints.innerHTML = points;
+    // qEnd.classList.toggle("hidden");
+}
 
 function questionShowed(index) {
     for (let i = 0; i < questions.length; i++) {
@@ -60,5 +83,4 @@ function questionShowed(index) {
         }
     }
 }
-
 
