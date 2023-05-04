@@ -49,7 +49,7 @@ function nextQuestion() {
     if (questionIndex < questions.length - 1) {
         questionIndex = Math.max(questionIndex + 1) % questions.length;
     }
-
+    // HEJJ
 
     questionShowed(questionIndex);
 }
