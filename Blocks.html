@@ -61,42 +61,52 @@
 
   <div class="quiz">
 
-    <div class="quizQuestion">
-        <h1>What block is the rarest block as of 1.19.4?</h1>
-    </div>
-
-    <div class="asnwers">
+    <div class="q1" id="q1">
+      <div class="quizQuestion">
+        <h2>1. How can Iron Ore be mined?</h2>
+      </div>
+  
+      <div class="answers">
         <label>
-          <input type="radio" name="blocksQuestionOne" value="0"> Raw Iron Ore Block
-      </label>
-      <label>
-          <input type="radio" name="blocksQuestionOne" value="0"> Deepslate Emerald Ore
-      </label>
-      <label>
-        <input type="radio" name="blocksQuestionOne" value="0"> Deepslate Diamond Ore
-      </label>
-      <label>
-        <input type="radio" name="blocksQuestionOne" value="1"> Deepslate Coal Ore
-      </label>
+          <input type="radio" name="starQuestionOne" value="0"> Wooden Pickaxe
+        </label>
+        <label>
+          <input type="radio" name="startQuestionOne" value="1"> Stone Pickaxe
+        </label>
+        <label>
+          <input type="radio" name="startQuestionOne" value="0"> Iron Pickaxe
+        </label>
+        <label>
+          <input type="radio" name="startQuestionOne" value="0"> Electric Drill
+        </label>
+      </div>
+    </div>
+  
+    <div class="q2 hidden" id="q2">
+      <div class="quizQuestion">
+        <h2>2. How is a Stone Pickaxe crafted?</h2>
+      </div>
+  
+      <div class="answers">
+        <label>
+          <input type="radio" name="startQuestionTwo" value="0"> 1 x Stick, 1 x Cobblestone
+        </label>
+        <label>
+          <input type="radio" name="startQuestionTwo" value="0"> 1 x Stick, 3 x Cobblestone
+        </label>
+        <label>
+          <input type="radio" name="startQuestionTwo" value="0"> 2 x Stick, 2 x Cobblestone
+        </label>
+        <label>
+          <input type="radio" name="startQuestionTwo" value="1"> 2 x Stick, 3 x Cobblestone
+        </label>
+      </div>
     </div>
 
-    <div class="quizQuestion">
-      <h1></h1>
-    </div>
-
-    <div class="answers">
-      <label>
-        <input type="radio" name="blocksQuestionTwo" value="0">
-      </label>
-      <label>
-        <input type="radio" name="blocksQuestionTwo" value="0">
-      </label>
-      <label>
-        <input type="radio" name="blocksQuestionTwo" value="0">
-      </label>
-      <label>
-        <input type="radio" name="blocksQuestionTwo" value="0">
-      </label>
+    <div class="buttons">
+      <button type="button" class="backButton hidden">Previous Question</button>
+      <button type="button" class="nextButton">Next Question</button>
+      <button type="button" class="finishButton hidden">Finish The Quiz</button>
     </div>
 
   </div>

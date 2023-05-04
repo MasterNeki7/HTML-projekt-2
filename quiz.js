@@ -86,7 +86,6 @@ function handleForm() {
 
     for (let a = 0; a < answers.length; a++) {
         points += parseInt(answers[a].value, 10);
-        console.log(points);
     }
     alert(`you got ${points} points!`);
 

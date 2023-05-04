@@ -28,7 +28,7 @@ body {
 }
 
 article {
-    padding: 10px;
+    padding: 50px;
     margin-bottom: 5%;
     text-align: center;
     background-color: var(--primary-color);
