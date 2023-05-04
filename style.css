@@ -82,6 +82,13 @@ footer {
     border: 2px solid var(--border-color);
 }
 
+.halfImg {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    padding: 0px;
+    margin: 0px;
+}
+
 .blocks-list {
     padding: 15px;
     margin-bottom: 5%;
