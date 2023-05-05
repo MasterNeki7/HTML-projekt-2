@@ -97,7 +97,20 @@ footer {
     border-radius: 100px;
     border: 2px solid var(--border-color);
     list-style: none;
+}
 
+.block-cell {
+    font-family: 'Minecraft', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noMargin  {
+    margin: 0px;
 }
 
 .title {
