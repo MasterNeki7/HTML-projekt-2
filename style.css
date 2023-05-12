@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 
+/* ------------------------------------------------------ Element ------------------------------------------------------- */
+
 :root {
     --background-color: rgba(255, 255, 255, 0.7);
     --primary-color: rgba(255, 255, 255, 0.3);
@@ -82,6 +84,14 @@ footer {
     border: 2px solid var(--border-color);
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* --------------------------------------------------- För Start.html --------------------------------------------------- */
+
 .halfImg {
     display: grid;
     grid-template-rows: 1fr, 1fr;
@@ -89,9 +99,19 @@ footer {
     margin: 0px;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------- För Blocks.html --------------------------------------------------- */
+
 .blocks-list {
     padding: 15px;
     margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     background-color: var(--primary-color);
     border-radius: 100px;
@@ -109,6 +129,39 @@ footer {
     align-items: center;
 }
 
+
+.blocks-menu {
+   
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* --------------------------------------------------- För Tools.html --------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------- För Mobs.html --------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------- Gemensamt ------------------------------------------------------ */
+
 .noMargin  {
     margin: 0px;
 }
@@ -122,6 +175,7 @@ footer {
     background-color: var(--primary-color);
     border-radius: 50px;
     border: 2px solid var(--border-color);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .body {
@@ -170,6 +224,22 @@ footer {
     border-radius: 5%;
 }
 
+.title, .pages {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)), url("img/stone-block-bkg.png")
+}
+
+.hidden {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------------- För Quiz ----------------------------------------------------- */
+
 .quiz {
     background-color: var(--background-color);
     border: 2px solid var(--border-color);
@@ -184,16 +254,7 @@ footer {
     text-align: center;
 }
 
-.q1,
-.q2,
-.q3,
-.q4,
-.q5,
-.q6,
-.q7,
-.q8,
-.q9,
-.q10 {
+.q1,.q2,.q3,.q4,.q5,.q6,.q7,.q8,.q9,.q10 {
     background-color: var(--background-color);
     border: 2px solid var(--border-color);
     border-radius: 50px;
@@ -214,14 +275,9 @@ footer {
 
 }
 
-.title,
-.pages {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)), url("img/stone-block-bkg.png")
-}
 
-.nextButton,
-.backButton,
-.finishButton {
+
+.nextButton,.backButton,.finishButton {
     width: 100px;
     height: 50px;
     font-family: 'Minecraft', sans-serif;
@@ -235,10 +291,6 @@ footer {
     color: green;
 }
 
-.hidden {
-    display: none;
-}
-
 .buttons {
     margin: 25px;
 }
@@ -246,3 +298,9 @@ footer {
 .hiddenButton {
     display: none;
 }
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
